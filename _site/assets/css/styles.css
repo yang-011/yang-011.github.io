@@ -2,4 +2,128 @@
   color: green;
 }
 
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  background: #f7f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0 0 12px 12px;
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3em 0.8em;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.current {
+  background: #2563eb;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  color: #222;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #2563eb;
+}
+
+main,
+.content,
+body > div,
+body > ul,
+body > section {
+  background: #fff;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 2.5vw;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.7em;
+}
+
+li h2,
+li h3 {
+  margin: 0.2em 0 0.1em 0;
+}
+
+button,
+.btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover,
+.btn:hover {
+  background: #1741a6;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem 0;
+  }
+  main,
+  .content,
+  body > div,
+  body > ul,
+  body > section {
+    padding: 1rem 2vw;
+    margin: 1rem 0.5rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
